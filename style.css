@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #c288ff 0%, #67ff295e 100%);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.game-area {
+    margin-bottom: 20px;
+}
+
+canvas {
+    background-color: #f4f4f9;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.controls {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 160px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:disabled {
+    background-color: #7f8c8d;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #e74c3c;
+    transform: translateY(-3px);
+}
+
+.levelBtn {
+    background-color: #27ae60;
+}
+
+.levelBtn:hover {
+    background-color: #2ecc71;
+}
+
+#lives, #score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#levelSelector {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#levelSelector button {
+    font-size: 16px;
+}
+
+.snake-head {
+    fill: #27ae60;
+}
+
+.snake-body {
+    fill: #2ecc71;
+}
+
+.food {
+    fill: #f39c12;
+}
